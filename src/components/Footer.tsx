@@ -4,7 +4,7 @@ import Block from './Block';
 const Footer = () => {
   return (
     <Block>
-      <div className='flex flex-row justify-around xl:mx-auto xl:gap-24 text-neutral-300'>
+      <div className='flex flex-row justify-around xl:mx-auto xl:gap-24'>
         <div>
           <span>© 2024 Latt-la</span>
         </div>

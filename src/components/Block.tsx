@@ -9,7 +9,7 @@ interface Block {
 const Block: React.FC<Block> = ({ children, title, buttonGroup }) => {
   return (
     <div
-      className={`flex flex-col justify-between p-6 bg-slate-600 rounded-2xl xl:col-start-4 xl:col-span-6 shadow-md`}
+      className={`flex flex-col justify-between p-6 bg-latt-bg rounded-2xl xl:col-start-4 xl:col-span-6 shadow-md`}
     >
       {title && <span className='font-bold text-2xl mb-6'>{title}</span>}
       {buttonGroup ? (

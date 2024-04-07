@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply bg-black text-white font-roboto;
+    @apply bg-latt-bg text-latt-purple font-roboto;
   }
 }
 
