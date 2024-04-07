@@ -1,10 +1,9 @@
 import { FaFileInvoice, FaGithub } from 'react-icons/fa6';
-import Block from './Block';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <Block>
+    <div className='flex flex-col justify-between p-6 xl:col-start-4 xl:col-span-6'>
       <div className='flex flex-row justify-around xl:mx-auto xl:gap-16'>
         <div>
           <span>© 2024 Latt-la</span>
@@ -37,7 +36,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-    </Block>
+    </div>
   );
 };
 
