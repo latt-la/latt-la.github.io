@@ -14,7 +14,7 @@ const Terms = () => {
           <span>Go Back</span>
         </Link>
         <div className='flex justify-center'>
-          <img src='./src/assets/Allan_icon.png' className='w-20 xl:w-24' />
+          <img src='./Allan_icon.png' className='w-20 xl:w-24' />
         </div>
         <Block>
           <div className='flex flex-col justify-center text-center'>
@@ -32,7 +32,7 @@ const Terms = () => {
             </div>
             <div className='flex flex-col text-left'>
               <span className='font-medium'>MY SERVICES THAT YOU CAN ASK FOR:</span>
-              <ul className='list-disc ml-6'>
+              <ul className='list-disc ml-10'>
                 <li>Illustrations</li>
                 <li>Concept art</li>
                 <li>Drawing comics</li>

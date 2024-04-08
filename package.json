@@ -1,7 +1,7 @@
 {
   "name": "lattla",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.5",
   "type": "module",
   "homepage": "https://lattla.art",
   "scripts": {
