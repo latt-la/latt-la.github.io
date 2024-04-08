@@ -1,18 +1,11 @@
-import { FaArrowLeft } from 'react-icons/fa6';
-import { Link } from 'react-router-dom';
 import Block from '../components/Block';
+import Back from '../components/Back';
 
 const Terms = () => {
   return (
     <>
       <div className='flex flex-col justify-between p-6 xl:col-start-4 xl:col-span-6 gap-8'>
-        <Link
-          to='/'
-          className='flex flex-row gap-2 items-center'
-        >
-          <FaArrowLeft />
-          <span>Go Back</span>
-        </Link>
+        <Back />
         <div className='flex justify-center'>
           <img
             src='./Allan_icon.png'
@@ -51,7 +44,7 @@ const Terms = () => {
               </span>
             </div>
 
-            <div className='text-left flex flex-col'>
+            <div className='text-left flex flex-col mb-8'>
               <span className='font-semibold text-xl underline'>PRICES AND PAYMENTS:</span>
               <ul className='list-disc ml-10 mb-2 leading-relaxed'>
                 <li>
@@ -84,7 +77,7 @@ const Terms = () => {
               </ul>
             </div>
 
-            <div className='text-left flex flex-col'>
+            <div className='text-left flex flex-col mb-8'>
               <span className='font-semibold text-xl underline'>WHAT YOU WILL RECEIVE:</span>
               <ul className='list-disc ml-10 mb-2 leading-relaxed'>
                 <li>
@@ -97,13 +90,39 @@ const Terms = () => {
                   extra charges). After the lineart is done you can not ask big changes, e.g.
                   another pose or drastic changes like a new face expression.
                 </li>
-                <li>After the commission is done I'll upload the full resolution drawing on my google drive and I'll share the link so you can download it.</li>
+                <li>
+                  After the commission is done I'll upload the full resolution drawing on my google
+                  drive and I'll share the link so you can download it.
+                </li>
               </ul>
             </div>
 
-            <div className='text-left flex flex-col'></div>
-            
+            <div className='text-left flex flex-col mb-8'>
+            <span className='font-semibold text-xl underline'>DISCLAIMER:</span>
+
+            </div>
+
+            <div className='text-left flex flex-col mb-8'>
+            <span className='font-semibold text-xl underline'>MY RIGHTS:</span>
+
+            </div>
+
+            <div className='text-left flex flex-col mb-8'>
+            <span className='font-semibold text-xl underline'>REFUND POLICIES:</span>
+
+            </div>
+
+            <div className='text-left flex flex-col mb-8'>
+            <span className='font-semibold text-xl underline'>USAGE AND RESELLING:</span>
+
+            </div>
           </div>
+        </Block>
+        <Block>
+        <div className='flex flex-col justify-center text-center'>
+        <span className='font-bold text-2xl'>THE COMISSION PROCESS</span>
+
+        </div>
         </Block>
       </div>
     </>
