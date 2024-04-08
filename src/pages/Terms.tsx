@@ -1,6 +1,5 @@
 import { FaArrowLeft } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
-import LogoWhiteOutline from '../components/logo/LogoWhiteOutline';
 import Block from '../components/Block';
 
 const Terms = () => {
@@ -15,12 +14,12 @@ const Terms = () => {
           <span>Go Back</span>
         </Link>
         <div className='flex justify-center'>
-          <LogoWhiteOutline width='50px' />
+          <img src='./src/assets/Allan_icon.png' className='w-20 xl:w-24' />
         </div>
         <Block>
           <div className='flex flex-col justify-center text-center'>
             <div className='font-bold text-2xl flex flex-col'>
-              <span>TERMS OF SERVICE (TOS) AND PRICES - 2022</span>
+              <span>TERMS OF SERVICE (TOS) AND PRICES - 2024</span>
               <span>BY LATT-LA</span>
             </div>
 
