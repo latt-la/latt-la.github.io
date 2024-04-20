@@ -26,7 +26,7 @@ const Footer = () => {
           <FaCat />
           <span>Virkkunen</span>
         </Link>
-        |
+        <span className="max-lg:hidden">|</span>
         <Link
           to="http://creativecommons.org/licenses/by-nc-nd/4.0/"
           className="flex flex-row justify-center items-center gap-x-1 font-medium transition-all ease-in-out duration-200 hover:text-blue-400 active:text-blue-600"
