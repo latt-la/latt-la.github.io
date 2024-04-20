@@ -1,8 +1,7 @@
-import {
-  FaCat,
-  FaCreativeCommons,
-  FaCreativeCommonsBy,
-} from "react-icons/fa6";
+import { faCreativeCommonsBy } from "@fortawesome/free-brands-svg-icons";
+import { faCreativeCommons } from "@fortawesome/free-brands-svg-icons/faCreativeCommons";
+import { faCat } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -22,7 +21,7 @@ const Footer = () => {
           rel="noreferrer noopener"
           to="https://vrkknn.net"
         >
-          <FaCat />
+          <FontAwesomeIcon icon={faCat} />
           <span>Virkkunen</span>
         </Link>
         <span className="max-lg:hidden">|</span>
@@ -31,8 +30,8 @@ const Footer = () => {
           className="flex flex-row justify-center items-center gap-x-1 font-medium transition-all ease-in-out duration-200 hover:text-gruv-blue active:text-gruv-blue-alt"
         >
           CC BY-NC-ND 4.0
-          <FaCreativeCommons />
-          <FaCreativeCommonsBy />
+          <FontAwesomeIcon icon={faCreativeCommons} fixedWidth />
+          <FontAwesomeIcon icon={faCreativeCommonsBy} fixedWidth />
         </Link>
       </div>
 
