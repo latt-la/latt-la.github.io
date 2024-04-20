@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col flex-wrap max-lg:text-sm xl:flex-row justify-center items-center text-center xl:justify-around xl:gap-16 gap-y-2 xl:gap-y-1 xl:p-6 xl:col-start-4 xl:col-span-6 max-lg:flex-row-reverse">
+    <div className="flex flex-col flex-wrap max-lg:text-sm xl:flex-row justify-center items-center text-center xl:justify-around xl:gap-16 gap-y-2 xl:gap-y-1 xl:p-6 xl:col-start-4 xl:col-span-6 max-lg:flex-row-reverse max-md:mb-8">
       <div className="flex flex-row flex-wrap justify-center gap-y-1 gap-x-1 lg:gap-x-1 lg:gap-y-0 items-center">
         <Link
           to="/"
