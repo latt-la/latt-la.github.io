@@ -2,11 +2,19 @@ import { faCreativeCommonsBy } from "@fortawesome/free-brands-svg-icons";
 import { faCreativeCommons } from "@fortawesome/free-brands-svg-icons/faCreativeCommons";
 import { faCat } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col flex-wrap max-lg:text-sm xl:flex-row justify-center items-center text-center xl:justify-around xl:gap-16 gap-y-2 xl:gap-y-1 xl:p-6 xl:col-start-4 xl:col-span-6 max-lg:flex-row-reverse max-md:mb-8">
+    <motion.div
+      className="flex flex-col flex-wrap max-lg:text-sm xl:flex-row justify-center items-center text-center xl:justify-around xl:gap-16 gap-y-2 xl:gap-y-1 xl:p-6 xl:col-start-4 xl:col-span-6 max-lg:flex-row-reverse max-md:mb-8"
+      key="footer"
+      initial={{ opacity: 0, y: 2500 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -1050 }}
+      transition={{ duration: 0.7, ease: [0.6, -0.05, 0.01, 0.99] }}
+    >
       <div className="flex flex-row flex-wrap justify-center gap-y-1 gap-x-1 lg:gap-x-1 lg:gap-y-0 items-center">
         <Link
           to="/"
@@ -44,7 +52,7 @@ const Footer = () => {
         <FaFileInvoice />
         <span>Terms of Service</span>
       </Link> */}
-    </div>
+    </motion.div>
   );
 };
 

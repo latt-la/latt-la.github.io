@@ -5,13 +5,21 @@ import LogoFull from "../components/logo/LogoFull";
 import data from "../data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileInvoice } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 
-function App() {
+function Home() {
   return (
     <>
-      <div className="flex flex-col justify-between p-6 xl:col-start-4 xl:col-span-6 xl:row-start-1">
+      <motion.div
+        className="flex flex-col justify-between p-6 xl:col-start-4 xl:col-span-6 xl:row-start-1"
+        key="home"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -300 }}
+        transition={{ duration: 0.7, ease: [0.6, -0.05, 0.01, 0.99] }}
+      >
         <LogoFull />
-      </div>
+      </motion.div>
       <Block buttonGroup>
         <Link
           to="/terms"
@@ -36,4 +44,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
