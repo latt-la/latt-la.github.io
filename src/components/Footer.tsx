@@ -12,7 +12,7 @@ const Footer = () => {
       key="footer"
       initial={{ opacity: 0, y: 2500 }}
       animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -1050 }}
+      exit={{ opacity: 0, y: -2500 }}
       transition={{ duration: 0.7, ease: [0.6, -0.05, 0.01, 0.99] }}
     >
       <div className="flex flex-row flex-wrap justify-center gap-y-1 gap-x-1 lg:gap-x-1 lg:gap-y-0 items-center">
